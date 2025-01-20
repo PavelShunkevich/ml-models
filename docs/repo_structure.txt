@@ -1,0 +1,65 @@
+ml-models-repo/
+├── models/                  # Folder for trained models
+│   ├── catboost/          # Division by libraries
+│   │   ├── model_a/
+│   │   │   ├── model_a.pkl  # Example: model in pickle format
+│   │   │   └── model_a_metadata.json # Model metadata (training parameters, metrics, etc.)
+│   │   └── model_b/
+│   │       ├── model_b.joblib # Example: model in joblib format
+│   │       └── model_b_metadata.json
+│   └── pytorch/             # Division by libraries
+│       ├── model_c/
+│       │   ├── model_c.pth  # PyTorch model's saved weights
+│       │   └── model_c_metadata.json
+│       └── model_d/
+│           ├── model_d.pth
+│           └── model_d_metadata.json
+├── code/                    # Folder for code
+│   ├── catboost/            # Division by libraries
+│   │   ├── train.py         # Training script
+│   │   ├── predict.py       # Prediction script
+│   │   └── utils.py         # Utility functions
+│   ├── pytorch/             # Code for PyTorch models
+│   │   ├── train.py
+│   │   ├── predict.py
+│   │   └── utils.py
+│   └── library/             # My library
+│       ├── __init__.py
+│       ├── model_utils.py   # Common functions for working with models
+│       └── data_utils.py    # Common functions for working with data
+├── data/                    # Folder for data (consider using Git LFS for large files)
+│   ├── catboost/            # Division by libraries
+│   │   ├── model_a/
+│   │   │   ├── train_data.csv # (Maybe file with link to google disc)
+│   │   │   └── test_data.csv
+│   │   └── model_b/
+│   │       ├── train_data.csv
+│   │       └── test_data.csv
+│   └── pytorch/             # Division by libraries
+│       ├── model_c/
+│       │   ├── train_data.pt   # PyTorch tensor data
+│       │   └── test_data.pt
+│       └── model_d/
+│           ├── train_data.pt
+│           └── test_data.pt
+├── docs/                   # Documentation (README, examples, etc.)
+│   ├── README.md
+│   └── examples/
+│       ├── catboost_model_a_example.ipynb
+│       └── pytorch_model_c_example.ipynb
+├── tests/                 # Tests
+│   ├── catboost/          # Division by libraries
+│   │   ├── model_a/
+│   │   │   ├── test_train.py
+│   │   │   └── test_predict.py
+│   │   └── model_b/
+│   │       ├── test_train.py
+│   │       └── test_predict.py
+│   └── pytorch/             # Division by libraries
+│       ├── model_c/
+│       │   ├── test_train.py
+│       │   └── test_predict.py
+│       └── model_d/
+│           ├── test_train.py
+│           └── test_predict.py
+└── setup.py                 # Setup file (maybe in future)
