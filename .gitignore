@@ -1,5 +1,6 @@
 # Ignore files and folders created by IDEs
 .idea/
+*.iml
 *.vscode/
 *.pydevproject
 
