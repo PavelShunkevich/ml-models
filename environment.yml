@@ -1,0 +1,17 @@
+name: ml-models
+channels:
+  - pytorch
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.12.*
+  - numpy=*
+  - pandas=*
+  - scikit-learn=*
+  - matplotlib=*
+  - seaborn=*
+  - pytorch=*
+  - torchvision=*
+  - torchaudio=*
+  - requests=*
+  - tqdm=*
