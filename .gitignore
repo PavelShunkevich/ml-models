@@ -65,7 +65,6 @@ docker/
 
 # Ignore Jupyter Notebook files
 *.ipynb_checkpoints/
-*.ipynb
 .ipynb_checkpoints/*
 
 # Ignore report files
