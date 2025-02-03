@@ -38,6 +38,19 @@ Data normalization was used.
 *   Metric: Accuracy
 *   Accuracy on the test set: 0.8111
 
+## Project Structure
+
+*   [visualization](visualization): folder, with visualization files
+    *   [net_dropout_graph](visualization/net_dropout_graph): graph description
+    *   [net_dropout_graph.png](visualization/net_dropout_graph.png): network graph in png format
+    *   [visualize_net.py](visualization/visualize_net.py):0code for graph visualization
+* [dict_consts.pth](dict_consts.pth): PyTorch constant values
+* [image_classification_cifar10.ipynb](image_classification_cifar10.ipynb): notebook to create the model 
+* [model_cifar10.pt](model_cifar10.pt): PyTorch file, storing a trained neural network model
+* [model_info.md](README): information about model
+* [nn_modules.py](nn_modules.py): file with nn modules
+* [test_model.ipynb](test_model.ipynb): notebook, with model test
+
 ## Model Usage
 
 The model is can be using the following notebook: [test_model.ipynb](test_model.ipynb)
