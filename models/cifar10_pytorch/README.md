@@ -53,4 +53,4 @@ Data normalization was used.
 
 ## Model Usage
 
-The model is can be using the following notebook: [test_model.ipynb](test_model.ipynb)
+To work with the model use this notebook: [test_model.ipynb](test_model.ipynb)
