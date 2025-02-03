@@ -1,20 +1,19 @@
-# Model info
+# CIFAR-10 Image Classification Model based on ResNet with Dropout
 
-# CIFAR-10 Image Classification Model based on ResNet-18
+This model is trained to classify images from the CIFAR-10 dataset using a ResNet with Dropout architecture. It is capable of distinguishing between 10 different object classes.
 
-This model is trained to classify images from the CIFAR-10 dataset using a ResNet-18 architecture. It is capable of distinguishing between 10 different object classes.
-
-**Training Date:** 2023-10-27
+**Training Date:** 2025-01-25
 
 ## Model Architecture
 
-The model is based on the ResNet-18 architecture, which consists of a set of convolutional layers, subsampling layers, and fully connected layers. It includes ResNet blocks with skip connections.
+A custom convolutional network using:
 
-*   Convolutional layers: `Conv2d(in_channels=3, out_channels=64, kernel_size=3, stride=1, padding=1)`, ...
-*   Max pooling layers: `MaxPool2d(kernel_size=2, stride=2)`
-*   Fully connected layers: `Linear(in_features=512, out_features=10)`
+* Initial conv, batch norm, and ReLU.
+* Two residual blocks with stride 2.
+* Adaptive average pooling.
+* Fully connected layers with dropout and ReLU.
 
-Total number of trainable parameters: 11,689,512
+Total number of trainable parameters: 1 185 290
 
 ## Dataset
 
@@ -30,20 +29,15 @@ Data normalization was used.
 
 *   Optimizer: Adam
 *   Loss function: CrossEntropyLoss
-*   Initial Learning rate: 0.001
-*   Number of epochs: 50
-*   Batch size: 64
+*   Initial Learning rate: 0.01
+*   Number of epochs: 100
+*   Batch size: 256
 
 ## Performance Evaluation
 
 *   Metric: Accuracy
-*   Accuracy on the test set: 0.88
+*   Accuracy on the test set: 0.8111
 
 ## Model Usage
 
-The model can be loaded using the following code:
-
-```python
-import torch
-model = torch.load('cifar10_model.pth')
-model.eval()
+The model is can be using the following notebook: [test_model.ipynb](test_model.ipynb)
