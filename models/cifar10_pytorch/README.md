@@ -47,7 +47,7 @@ Data normalization was used.
 * [dict_consts.pth](dict_consts.pth): PyTorch constant values
 * [image_classification_cifar10.ipynb](image_classification_cifar10.ipynb): notebook to create the model 
 * [model_cifar10.pt](model_cifar10.pt): PyTorch file, storing a trained neural network model
-* [model_info.md](README): information about model
+* [README.md](README.md) information about model 
 * [nn_modules.py](nn_modules.py): file with nn modules
 * [test_model.ipynb](test_model.ipynb): notebook, with model test
 
